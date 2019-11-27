@@ -856,7 +856,9 @@ export class NodeCrawler extends EventEmitter implements NodeCrawlerEvents {
          */
         const obj: any = {
             browseName: object.browseName.name,
-            nodeId: object.nodeId.toString()
+            nodeId: object.nodeId.toString(),
+            description: object.description,
+            displayName: object.displayName
         };
 
         // Append nodeClass
